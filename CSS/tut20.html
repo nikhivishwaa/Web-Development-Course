@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* universal selector */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            background-color: cyan;
+        }
+        .container{
+            background-color: rgb(189, 236, 255);
+            border: 2px solid rgb(4, 71, 18);
+            padding: 99px;
+            /* margin: 34px */
+            /* padding/margin: top right bottom left; */
+            /* padding: 23px 12px 23px 5px; */
+            /* padding/margin: y(top/bottom) x( right/left); */
+            margin: 10px 40px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my Heading</h3>             
+        <p id="box1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quidem eius provident assumenda odio nesciunt at dolorem dolor quaerat ut!</p>
+    </div>
+
+</body>
+</html>
