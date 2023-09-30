@@ -5,15 +5,16 @@ body{
 }
 header{
     border: 2px solid black;
-    background-color: rgb(46, 44, 44);
+    background-color: rgb(43 42 42);
+    height: 65px;
 }
 
 .left{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
     left: 25px;
-    top: 2px;
-    width: 250px;
+    top: 6px;
+    width: 298px;
 }
 .left img{
     display: inline-block;
@@ -27,9 +28,9 @@ header{
 .left div{
     display: inline-block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 28px;
+    font-size: 40px;
     position: relative;
-    top: -14px;
+    top: -6px;
     left: 25px;
 }
 .left div a{
@@ -38,40 +39,182 @@ header{
 }
 .mid{
     display: block;
-    border: 2px solid green;
-    margin: 8px auto;
-    width: 600px;
-    height: 37px;
+    /* border: 2px solid green; */
+    margin: 7px auto;
+    width: 495px;
+    height: 55px;
 }
 .right{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     position: absolute;
-    top:12px;
-    right: 25px;
-    width: 200px;
-    margin: 8px;
+    top: 10px;
+    right: 33px;
+    width: 238px;
 }
 
 .navbar{
     display: inline-block;
     margin: auto;
     position: relative;
-    width: 557px;
-    height: 33.5px;
-    border: 2px solid white;
+    width: 452px;
+    height: 52.5px;
+    /* border: 2px solid white; */
 }
 .navbar li{
     display: inline-block;
+    /* position: absolute; */
+    /* bottom: 2px; */
 }
-.navbar li a:hover, .navbar li a.active{
-    color: rgb(0, 0, 0);
-    background: rgb(0, 255, 225);
+.navbar li a:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(55, 55, 55);
+    border: 2px solid rgb(55, 55, 55);
+    border-radius: 10px;
+}
+.navbar li a.active{
+    color: rgb(255, 255, 255);
+    background: rgb(55, 55, 55);
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 .navbar li a{
     color: white;
-    padding: 2px 30px;
+    padding: 6px 11px;
+    margin: -1px -1px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 29px;
+    font-weight: 600;
     font-family: system-ui;
+    display: inline-block;
+    top: 10px;
+    border: 2px solid rgb(43 42 42);
+
+}
+
+.right button{
+    float: right;
+    background-color: rgb(0 183 255);
+    color: #ffffff;
+    border: 2px solid rgb(43 42 42);
+    border-radius: 6px;
+    font-size: 25px;
+    padding: 3px 12px;
+    margin: 2px 8px;
+    font-family: system-ui;
+    font-weight: 600;
+
+}
+.right button:hover{
+    cursor: pointer;
+    background-color: rgb(0 153 255);
+    color: #ffffff;
+    border: 2px solid rgb(43 42 42);
+}
+.right button:active{
+    cursor: pointer;
+    background-color: rgb(0 153 255);
+    color: rgb(255, 255, 255);;
+    border: 2px solid rgba(255, 255, 255, 0.793);
+}
+
+.container{
+    border: 2px solid hotpink;
+    margin-top: 71px;
+    display: inline-block;
+    left: 159px;
+    position: absolute;
+    border-radius: 10px;
+    padding: 25px;
+    width: 644px;
+    height: 328px;
+}
+
+.container:hover{
+    background-color: #b3b3b33d;
+    border: 2px solid rgb(0, 0, 0);
+}
+#homeimage{
+    border: 2px solid red;
+    width: 642px;
+    height: 332px;
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+}
+footer{
+    border: 2px solid black;
+    background-color: rgb(43 42 42);
+    height: 65px;
+    position: absolute;
+    bottom: 0px;
+}
+.copyright{
+    color: white;
+}
+.copyright h3{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-group{
+    background-color: #daedff;
+    position: absolute;
+    right: 107px;
+    top: 138px;
+    width: 353px;
+    height: 330px;
+    padding: 28px;
+    padding-top: 8px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+.form-group h1{
+    color: black;
+    text-align: center;
+    font-size: 38px;
+    padding: 0px;
+    margin-top: 2px;
+    margin-bottom: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-group .field input{
+    position: relative;
+    margin: 10px 24px;
+    width: 298px;
+    height: 34px;
+    text-align: center;
+    font-size: 19px;
+    font-family: system-ui;
+    border: 1.5px solid grey;
+    border-radius: 4px;
+}
+
+/* .form-group .btn{
+    border: 2px solid;
+} */
+.form-group .btn input{
+    position: relative;
+    background-color: rgb(44 48 49);
+    width: 144px;
+    color: #ffffff;
+    border: 2px solid rgb(218 237 255);
+    border-radius: 34px;
+    font-size: 25px;
+    padding: 3px 12px;
+    right: -21px;
+    top: 17px;
+    margin: 2px 4px;
+    font-family: system-ui;
+    font-weight: 600;
+    cursor: pointer;
+}
+.form-group .btn input:hover{
+    background-color: rgb(53 56 57);
+    color: #ffffff;
+}
+.form-group .btn input:active{
+    background-color: rgb(53 56 57);
+    color: #ffffff;
+    border: 2px groove rgb(0, 3, 151);
 }

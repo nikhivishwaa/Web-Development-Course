@@ -1,0 +1,8 @@
+{
+    "liveshare.featureSet": "insiders",
+    "livePreview.hostIP": "192.168.43.106",
+    "livePreview.httpHeaders": {
+
+        "Accept-Ranges": "bytes"
+    }
+}
