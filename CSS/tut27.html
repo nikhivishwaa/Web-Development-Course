@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index </title>
+    <style>
+        .box{
+            border:2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        #box-1{ 
+            background-color: red;
+            position: relative;
+            top: 25px;
+            z-index: 10;
+        }
+
+/* which element has greater z-index has is visible completely and overlap small z-index element  */
+
+        #box-2{ 
+            background-color: blue;
+            /* z-index: will work only for positions: reletive, absolute, fixed or sticky*/
+            position: relative;
+            z-index: 25;
+            /* hide the element but show the space for it */
+            /* visibility: hidden; */
+            /* hide the element and its space*/
+            /* display: none; */
+        }
+        #box-3{ 
+            background-color: green;
+        }
+        #box-4{ 
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+</html>

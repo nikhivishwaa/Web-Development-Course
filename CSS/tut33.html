@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After & Before Pseudo Selector</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+        .navigation{
+            display: flex;
+
+        }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+            font-size: 25px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 650px;
+            margin: 30px 23px;
+        }
+        section h1{
+            font-size: 40px;
+        }
+        section p{
+            font-size: 24px;
+            text-align: center;
+        }
+
+        /* section::before{
+            content: "i am content using before";
+        } */
+        section::after{
+            content: "i am content using after";
+        }
+
+        header::before{
+            content: "";
+            background: url("https://source.unsplash.com/collection/190727/1600x900") no-repeat center center/cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="navigation">Home</li>
+                <li class="navigation">About</li>
+                <li class="navigation">Contact</li>
+                <li class="navigation">Services</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <h1>Welcome to Codeing Ara</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto error aspernatur laborum eum tempora ad fugiat temporibus dicta placeat corrupti ut nesciunt eos neque, nemo officiis dolorum doloribus soluta aperiam numquam praesentium harum quod voluptates. Dolorem laudantium optio earum ipsam iure! Eum cupiditate vel, modi beatae molestiae enim vitae quis facilis non voluptatum provident nam reprehenderit similique fuga sit dolore, blanditiis nihil, cum expedita culpa. Nobis unde quisquam, eos incidunt praesentium voluptas sint nostrum! Nisi mollitia, dolore ullam eum corporis quae non id blanditiis enim laboriosam quasi, temporibus, impedit illum. Corrupti laboriosam culpa, dolores minus in qui. Necessitatibus doloremque animi tenetur id quas mollitia consequuntur a? Pariatur nam placeat blanditiis aliquam nisi natus explicabo laboriosam, sit repellendus quaerat? Voluptatibus quam nam dignissimos ex eos pariatur maxime blanditiis, sequi, quidem a vero. Animi repellendus, mollitia aliquid at distinctio voluptas deserunt dicta corrupti deleniti nihil qui quibusdam sed totam, nam ab asperiores explicabo minima tempore pariatur odio? Optio impedit minus architecto eius vero labore rerum magni voluptates nobis ducimus, magnam, a iure pariatur itaque excepturi aliquam nam totam esse nesciunt nisi dignissimos fugiat autem neque asperiores. Tempore pariatur ea adipisci veniam. Quae eaque culpa blanditiis fuga et magnam amet in delectus vitae.</p>
+</section>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More in Selectors</title>
+    <style>
+        /* if p is write after div i.e. p is next sibling of div so this css will apply */
+        div + p{
+            background-color: rgb(157, 0, 255);
+            color: white;
+            font-size: 25px;
+        }
+        /* if p is write inside div so this css will apply */
+        /* div > p{
+            background-color: blue;
+            color: white;
+            font-size: 25px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <ul>
+                <li>
+                    <p>i am inside li</p>
+                </li>
+                <p> i am outsude li</p>
+            </ul>
+            <p> i am outsude ul</p>
+        </div>
+        <p> i am outsude div box</p>
+    </div>
+    <p> i am outsude div container</p>
+</body>
+</html>

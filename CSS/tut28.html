@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 500px;
+            display: flex;  /* flex container */
+
+            /* flex properties for a flex container */
+            /* flex-direction: row;  default */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse;   */
+            /*flex-direction: column-reverse; */
+
+            flex-wrap: nowrap; /* default */
+            /* flex-wrap: wrap; help to make responsive websites */
+            /* flex-wrap: wrap-reverse; *//*help to make responsive websites */
+            /* flex-flow: row-reverse wrap; */
+            
+
+            /* justify-content justify the content in horizontal direction */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around;   */
+            
+            /* align-item justify the content in vertical direction */
+            /* align-items: center;   */
+            /* align-items: flex-end;   */
+            /*  align-items: flex-start;    */
+     /* default value is flex-start */
+            /* align-items: stretch;   */
+
+
+        }
+        .box{
+            background-color: hotpink;
+            color: aqua;
+            margin: 10px;
+            padding: 3px;
+            width: 165px;
+            height: 165px;
+        }
+        #box-1{
+            /* Flex properties for a flex box */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+            /* Higher the flex-grow, shows grow more then others in the container (* -ve values are not allowed here)*/
+            /* Higher the flex-shrink, shows shrink more then others in the container (* +ve values taken)*/
+            /* flex-grow: 5; */
+            /* flex-shrink: 8; */
+            /* flex-grow: 2; */
+
+            /* flex-basis: 300px;  */
+            /* when the flex-direction is set to row so flax-basis will control the width */
+            /* when the flex-direction is set to column so flax-basis will control the height */
+        }
+        #box-2{
+            /* flex-shrink: 3;
+            flex-grow: 3; */
+            flex-basis: 120px;
+        }
+        #box-3{
+            /* order: 15; */
+            /* flex: 2 2 230px; */
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+            /* align-self: start; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box 1</div>
+        <div class="box" id="box-2">box 2</div>
+        <div class="box" id="box-3">box 3</div>
+        <!-- <div class="box" id="box-4">box 4</div>
+        <div class="box" id="box-5">box 5</div>
+        <div class="box" id="box-6">box 6</div> -->
+    </div>
+</body>
+</html>

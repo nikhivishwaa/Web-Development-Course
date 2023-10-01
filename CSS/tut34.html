@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .box{
+            background-color: orange;
+            /* box-shadow: <offset-x>  <offset-y>  <color> */
+            box-shadow: 10px 10px fuchsia;
+            /* box-shadow: -10px -10px fuchsia; */
+            /* box-shadow: <offset-x>  <offset-y>  <blur-rad>  <color> */
+            box-shadow: 1px 2px 6px fuchsia;
+            /* box-shadow: <offset-x>  <offset-y>  <blur-rad>  <spread-rad>  <color> */
+            /* box-shadow: 4px 4px 8px 24px fuchsia; */
+
+            /* inside shadow */
+            /* box-shadow: inset 4px 4px 8px 24px fuchsia; */
+            
+            width: 200px;
+            padding: 12px;
+        }
+        .box h1{
+            text-shadow: -1px 1px white;
+            text-shadow: -1px 1px 6px white;
+            /* text-shadow: -1px 1px 6px 10px white; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+        <h1>I am Box - 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officia reprehenderit explicabo voluptates exercitationem perspiciatis illo ex ad similique laboriosam minima laudantium ut, magnam, sequi, quae molestiae quas deserunt. Accusamus, iure.</p>
+    </div>
+    <div class="box">
+        <h1>I am Box - 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officia reprehenderit explicabo voluptates exercitationem perspiciatis illo ex ad similique laboriosam minima laudantium ut, magnam, sequi, quae molestiae quas deserunt. Accusamus, iure.</p>
+    </div>
+    <div class="box">
+        <h1>I am Box - 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officia reprehenderit explicabo voluptates exercitationem perspiciatis illo ex ad similique laboriosam minima laudantium ut, magnam, sequi, quae molestiae quas deserunt. Accusamus, iure.</p>
+    </div>
+    </div>
+</body>
+</html>
