@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in JavaScript</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var str = "This is a String";
+    console.log(str);
+    // First Occurance of a Substring
+    var position = str.indexOf('is');
+    console.log(position);
+
+    // Last Occurance of a Substring
+    position = str.lastIndexOf('is');
+    console.log(position);
+
+    // Substring from a string (startfrom, upto+1)
+    // var substr = str.slice(1,9); // it can take -ve values
+    // var substr = str.substring(1,9); 
+    var substr1 = str.substr(1,18); //(index, lenth of new string/length from index)
+    console.log(substr1)
+
+    var replaced = str.replace('String', 'nikhil');
+    console.log(str);    
+    console.log(replaced);
+    
+    // console.log(str.toUpperCase());
+    // console.log(str.toLowerCase());
+    // var nestr = str.concat(" New string");
+    // console.log(nestr);
+    // var strwithwhitespaces = "   this    is a   pointer    ";
+    // console.log(strwithwhitespaces);
+    // console.log(strwithwhitespaces.trim());
+    // var char3 = str.charAt(2);
+    var char3 = str.charCodeAt(2);
+    console.log(char3);
+    
+    console.log(str[2], str[3]);
+    console.log(str[2]);
+    // slicing
+</script>
+</html>

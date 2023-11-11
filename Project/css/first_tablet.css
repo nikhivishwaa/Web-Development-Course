@@ -1,0 +1,54 @@
+/* Navigation Bar styling */
+
+#navbar ul li a{
+    padding: 0px 7px;
+    font-size: 1.1rem;
+    margin: 0px;
+}
+
+#logo {
+    margin: 5px 17px;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 225px;
+    margin: 10px 0px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#home::before {
+    content: "";
+    background: #673AB7;
+    position: absolute;
+    z-index: -1;
+    height: 220px;
+    width: 100%;
+    margin: 8px;
+    display: block;
+}
+
+#home p{
+    font-size: 1rem;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 1.9rem;
+    padding: 10px;
+}
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.btn{
+    font-size: 1.2rem;
+}

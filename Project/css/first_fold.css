@@ -1,0 +1,43 @@
+/* Home Section */
+
+#home{
+    height: 239px;
+}
+
+#home::before {
+    content: "";
+    background: #673AB7;
+    position: absolute;
+    z-index: -1;
+    height: 218px;
+    width: 100%;
+    margin: 8px;
+    display: block;
+}
+
+#home p, #home h1{
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Service Section : Service Containers */
+
+.service-container{
+    flex-basis: 230px;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 1.7rem;
+    padding: 10px;
+}
+.h-secondary {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.btn{
+    font-size: 1.1rem;
+}

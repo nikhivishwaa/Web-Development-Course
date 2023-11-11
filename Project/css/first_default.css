@@ -1,0 +1,185 @@
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar  */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: whitesmoke;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Navigation Bar: Logo and Image  */
+
+#logo{
+    margin: 5px 46px;
+}
+
+#logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+/* Navigation Bar: List Styling  */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 18px;
+    color: #333;
+}
+#navbar ul li a:hover{
+    color: white;
+    background-color: #333;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    margin: 10px 0px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#home::before {
+    content: "";
+    background: #673AB7;
+    position: absolute;
+    z-index: -1;
+    height: 234px;
+    width: 100%;
+    margin: 4px;
+    display: block;
+    top: 69px;
+}
+
+
+#home p{
+    font-size: 1.3rem;
+}
+
+/* Services Section */
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+/* Service Section : Service Containers */
+
+.service-container{
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 5px;
+    flex-basis: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.service-container img{
+    display: block;
+    margin: 10px auto;
+    height: 100px;
+    width: 100px;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 2.9rem;
+    padding: 10px;
+}
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 10px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:active{
+    animation-name: buttoneffect;
+    animation: .2sec;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes buttoneffect {
+    from{
+        padding: 8px 20px;
+        margin: 20px;
+        border: 2px solid white;
+        color: white;
+        background-color: black;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        cursor: pointer;    
+    }
+    to{
+        border: 2px solid rgb(45, 45, 45);
+        color: rgb(255, 215, 215);
+        background-color: rgb(45, 45, 45);
+        box-shadow: 1px 1px 10px 2px white; 
+    }
+}
+
+
+.center{
+    text-align: center;
+}
+
+/* Footer & copyright */
+
+footer{
+    position: relative;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+
+#copyright{
+    padding: 15px;
+    color: rgb(59, 59, 59);
+    font-size: 0.8rem;
+}

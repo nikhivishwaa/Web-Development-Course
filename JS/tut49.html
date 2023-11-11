@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JavaScript</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div id="content"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatem earum! Quis incidunt explicabo rerum hic aspernatur sunt nam? Praesentium quam ad reprehenderit ut amet similique repudiandae eligendi unde, explicabo enim voluptates qui? Necessitatibus nesciunt in architecto non eius cupiditate optio, itaque illum quis quae temporibus dolores officiis ipsam sit labore aperiam nulla soluta excepturi aspernatur? Amet, ducimus aliquid reiciendis numquam commodi aperiam eius nihil esse quas possimus enim! Voluptate dolores ipsa placeat soluta obcaecati nesciunt officia ratione enim odit dignissimos doloremque harum mollitia dolorum eveniet quibusdam libero, facilis, nihil rem deserunt aliquid. Quidem deserunt, nemo doloribus ullam repellat, saepe, commodi libero sapiente accusamus officiis nostrum odit. Ut, praesentium? Saepe facilis laborum molestiae sequi quos voluptate sed ipsum enim dolorem assumenda atque consequatur doloribus quis nobis non aspernatur sint, nisi deleniti rem animi. Minus in quis, culpa veniam harum nulla ut dolores nam animi dolore optio facere totam commodi tenetur maxime quidem soluta impedit beatae sit reiciendis accusamus corrupti quas. Maxime fugit explicabo dolorem labore? Accusantium, mollitia. Recusandae repellat explicabo, unde rerum velit nemo consequuntur doloribus eveniet similique error exercitationem possimus deserunt architecto voluptas, maiores laudantium dolores fugit? Voluptate perspiciatis dicta ad porro eos odio quidem veritatis nam harum nesciunt?</p>
+</body>
+<script>
+    var String1 = "hello";
+    console.log(String1);
+    var String2 = 'world';
+    console.log(String2);
+    console.log(String1 + String2);
+
+    var name = 'Nikhil';
+    var college = "SISTec"
+    // creating template `` backticks
+    var temp = `${name} studied in ${college}`;
+    console.log(temp);
+
+    // finding length of string
+    var len = name.length;
+    console.log(`"length of name is' - ${len}`);
+
+    // escape sequence
+    console.log("hello \n\thappy journey\\");
+
+    // create string using constructor
+    var y = new String("nikhil");
+    console.log(y);
+
+    // adding content in html using JS
+    document.getElementById('content').innerHTML = '<h3>This is Added by - JavaScript</h3>';
+</script>
+</html>

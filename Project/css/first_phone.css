@@ -1,0 +1,54 @@
+/* Navigation Bar styling */
+
+#navbar{
+    flex-direction: column;
+}
+
+.unvisible{
+    display: none;
+}
+
+/* Home Section */
+
+#home{
+    height: 239px;
+}
+
+#home::before {
+    content: "";
+    background: #673AB7;
+    position: absolute;
+    z-index: -1;
+    height: 218px;
+    width: 100%;
+    margin: 8px;
+    display: block;
+}
+
+#home p{
+    font-size: .8rem;
+}
+
+/* Service Section : Service Containers */
+
+.service-container{
+    flex-basis: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+.h-secondary {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.btn{
+    font-size: 1rem;
+}

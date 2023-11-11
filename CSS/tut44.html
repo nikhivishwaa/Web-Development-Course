@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            /* GTA will be written as matrix */
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .box{
+            background-color: pink;
+            border: 2px solid red;
+            padding: 23px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="navbar">Home About Services Contact</div>
+    <div class="box" id="section">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus modi dolorum minus. Doloribus quisquam sint, accusantium quis tenetur, saepe vel rerum minima modi illum natus dicta qui nemo deserunt magnam.</div>
+    <div class="box" id="aside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, labore maiores possimus tempora nisi nostrum aperiam enim quia at praesentium autem explicabo totam libero laborum doloribus minus eveniet unde, itaque voluptatem pariatur molestias quisquam. Esse, repellendus nesciunt, id sed magnam sequi qui culpa laudantium voluptates, dolorem ad asperiores officiis temporibus voluptas. Reiciendis facere sed amet, animi fugiat earum repudiandae placeat! Ducimus, aliquid voluptatum atque consequatur ea sed modi natus unde maxime nobis ex, ad, aut laboriosam asperiores doloribus dignissimos. Beatae debitis at asperiores quam. Iure soluta velit maiores quod aperiam perferendis incidunt rem. Reprehenderit, perspiciatis accusamus iste vel expedita delectus.</div>
+    <footer class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, ducimus.</footer>
+        <!-- <div class="box">Item - 1</div>
+        <div class="box">Item - 2</div>
+        <div class="box">Item - 3</div>
+        <div class="box">Item - 4</div>
+        <div class="box">Item - 5</div>
+        <div class="box">Item - 6</div>
+        <div class="box">Item - 7</div>
+        <div class="box">Item - 8</div>
+        <div class="box">Item - 9</div>
+        <div class="box">Item - 10</div>
+        <div class="box">Item - 11</div>
+        <div class="box">Item - 12</div>
+        <div class="box">Item - 13</div>
+        <div class="box">Item - 14</div>
+        <div class="box">Item - 15</div>
+        <div class="box">Item - 16</div> -->
+    </div>
+</body>
+</html>
