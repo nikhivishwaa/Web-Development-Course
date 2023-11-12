@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS setTimout snd Clear Timeout</title>
+</head>
+<body>
+    <div class="container">
+        Time now is:
+        <span id="time"></span>
+    </div>
+    <script>
+        console.log("i am alive");
+        // setTimout --> Allows us to run the function once after the interval of time 
+        // setInterval --> Allows us to run the function repeatedly after the interval of time 
+
+        // function greet() {
+        //     console.log("Hello Good Morning");
+        // }
+        // setTimeout(greet, 5000);
+
+        // function greet(name) {
+        //     console.log("Hello Good Morning " + name);
+        // }
+        // setTimeout(greet, 5000, "nikhil");
+
+        function greet(name, bytxt) {
+            console.log("Hello Good Morning " + name+" "+bytxt);
+        }
+        // timeOut = setTimeout(greet, 5000, "nikhil", "knile");
+        // console.log(timeOut);
+        // clearTimeout(timeOut);
+
+        // setInterval(greet, 1000, "nikhil", "good night");
+        // intervalId = setInterval(greet, 1000, "nikhil", "good night");
+        // clearInterval(intervalId);
+
+        function dislpaytime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(dislpaytime,1000);
+    </script>
+</body>
+</html>
