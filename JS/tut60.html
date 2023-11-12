@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <div class="container">
+        This is Arrow F() Tutorial
+    </div>
+    <script>
+        // function greet() {
+            //     console.log("Hello Everyone");
+            // }
+            
+            // Arrow f() is a shortcut
+            greet = ()=> {
+                    console.log("Hello Everyone");
+                }
+            greet();
+
+            // let sum = (a, b)=>{return a+b;};
+            // console.log(sum(6,9));
+
+            let sum1 = (a, b) => a+b;
+            console.log(sum1(6,9));
+
+            let half = a => a/2;
+            // let half = a,b => a/2; // throws error
+            console.log(half(61));
+
+            // use case
+            setTimeout(()=>{console.log("Inside set Timeout")},3000);
+
+
+            let obj1 = {
+                names: ["nikhil", "ravi", "shivam", "pankaj"],
+                greeting: "Good Morning",
+                speak(){
+                    // this refers to same object
+                    this.names.forEach((students) => console.log(this.greeting + " Kukdoo Koo " + students));
+                    }
+                // speak(){
+                //     this.names.forEach(function s (students){ 
+                //         console.log(this.greeting + "Kukdoo Koo " + students);
+                //     }
+                //         );
+                //     }
+            }
+
+            obj1.speak();
+            console.log(obj1.names);
+    </script>
+</body>
+</html>
