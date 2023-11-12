@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conitions</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+            <li>item-8</li>
+            <li>item-9</li>
+            <li>item-10</li>
+        </ul>
+    </div>
+</body>
+<script>
+    // var is used for global scope
+    var string1 = "This is a string";
+    console.log(string1);
+    var string1 = "This is a Upadated string";
+    console.log(string1);
+
+    // let is used for block scope (local scope)
+    // let a = "u";
+    // console.log(a);
+    {
+        let a = "u";
+        console.log(a);
+    }
+    // console.log(a);
+    // let a = "u";
+    // console.log(a);
+
+    // contants in js
+    const a = "This cannot be changed";
+    console.log(a);
+    // a = "I want to changed. This cannot be changed";
+    // console.log(a);
+
+    // let age = 21;
+    // if(age>18){
+    //     console.log("you can drink water");
+    // }
+    // else{
+    //     console.log("you can drink Cold drink");
+    // }
+    // if(age==2){
+    //     console.log("you can drink milk");
+    // }
+    // else if(age>18){
+    //     console.log("you can drink water");
+    // }
+    // else{
+    //     console.log("you can drink Cold drink");
+    // }
+
+
+    const cups = 44;
+    switch (cups) {
+        case 4:
+            console.log("The value of cups is 4");
+            break;
+        case 41:
+            console.log("The value of cups is 41");
+            break;
+        case 42:
+            console.log("The value of cups is 42");
+            break;
+        case 44:
+            console.log("The value of cups is 44");
+            break;
+            
+            default:
+            console.log("The value of cups is None of 4,41,42,44");
+            break;
+    }
+</script>
+</html>

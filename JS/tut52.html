@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">
+        happy birthday
+    </div>
+    <script>
+        // premitive datatypes
+        let myvar1 = 34;
+        let myvar2 = "sting";
+        let myvar3 = true; // boolean
+        let myvar4 = undefined;
+        let myvar5 = null;
+        let myvar6 = 34.6;
+
+        // objects
+        let employee = {
+            name: "Harry",
+            salary: 10,
+            channel1: "logical coding",
+            "channel 2": "logical coding shorts",
+        }
+        console.log(employee);
+        console.log(employee.name);
+        console.log(employee['name']);
+        // console.log(employee.channel 2);  // throws error
+        console.log(employee['channel 2']);
+
+        // Array - indexing from 0
+        // let name = [1, 2, 4.8, true, null, "nikhil", undefined];
+        // console.log(name);
+
+        // let name = new Array(41, 25, 48, 5.6, true, null, "nikhil", undefined);
+        // console.log(name);
+        // name.sort();
+        // console.log(name);
+        // console.log(name.length);
+
+        // push new elemnts into array
+        // name.push("inserted by push F()");
+        // console.log(name);
+        // console.log(name.length);
+
+        let array = new Array(12);
+        console.log(array[0])
+        array.push(45);
+        console.log(array.length)
+        console.log(array)
+
+        // DOM -> Document Object Model
+    </script>
+</body>
+</html>
