@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsing JSON in JS</title>
+</head>
+<body>
+    <div class="container">
+        JSON Parsing
+    </div>
+    <script>
+        console.log("I am Alive");
+
+        // object
+        let jsonObj = {
+            name: "nikhil",
+            channel: "logicalCoding",
+            friend: "pankaj",
+            food: "maggi"
+        }
+        console.log(jsonObj);
+        
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+        myJsonStr = myJsonStr.replace("maggi", "pasta");
+        console.log(myJsonStr);
+
+        let newJsonObj = JSON.parse(myJsonStr); // takes valid json
+        console.log(newJsonObj);
+
+    </script>
+</body>
+</html>
