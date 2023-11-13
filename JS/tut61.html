@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <div class="container">
+        this is math object tutorial
+    </div>
+    <script>
+        let m = Math;
+        console.log(m);
+
+        //  Constants of math object
+        console.log("The value of m.E : ", m.E);
+        console.log("The value of m.PI : ", m.PI);
+        console.log("The value of m.LN2 : ", m.LN2);
+        console.log("The value of m.SQRT1_2 : ", m.SQRT1_2);
+        console.log("The value of m.LOG2E : ", m.LOG2E);
+
+        // Pow f()
+        console.log("The value of m.pow(3,2) : ", m.pow(3,2));
+
+        // Round , Floor and Ceil f()
+        console.log("The value of m.round(56.98) : ", m.round(56.98));
+        console.log("The value of m.round(56.34) : ", m.round(56.34));
+        console.log("The value of m.ceil(56.8) : ", m.ceil(56.8));
+        console.log("The value of m.floor(56.8) : ", m.floor(56.8));
+
+        //  Abs F()
+        console.log("The value of m.abs(5) : ", m.abs(5));
+        console.log("The value of m.abs(-5) : ", m.abs(-5));
+        
+        // Trignomatetric F() --> takes angle in radian
+        console.log("The value of m.sin(pi) : ", m.sin(m.PI));
+        console.log("The value of m.sin(pi/4) : ", m.cos(m.PI/4));
+        console.log("The value of m.tan(pi/2) : ", m.tan(m.PI/2));
+        
+        //  Min and Max f()
+        console.log("The value of m.min(4,5,3) : ", m.min(4,5,3));
+        console.log("The value of m.max(4,5,3) : ", m.max(4,5,3));
+        
+        // Generating random no. ---> default is (0 to 1)
+        console.log("The value of m.random() : ", m.random());
+
+        // Generating random no. b/w 0 to 100
+        let a = 1;
+        let b = 100;
+        let r1_100 = a + (b-a)*m.random();
+        console.log("The value of random no. b/w 1 to 100 : ", r1_100);
+
+
+    </script>
+</body>
+</html>
