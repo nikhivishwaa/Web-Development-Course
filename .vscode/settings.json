@@ -4,5 +4,6 @@
     "livePreview.httpHeaders": {
 
         "Accept-Ranges": "bytes"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
