@@ -4,12 +4,16 @@ var hText = ["Initializing Hacking",
     "Reading your Files",
     "Password files Detected",
     "Sending all passwords and personal files to server",
-    "Cleaning up",];
+    "Cleaning up",
+    "",
+    "just kidding",
+];
 var currentLine = 0;
 const changedots = (dots) => {
-    if (dots.length == 1) return '..';
+    if (dots == "") return '.';
+    else if (dots.length == 1) return '..';
     else if (dots.length == 2) return '...';
-    else if (dots.length == 3) return '.';
+    else if (dots.length == 3) return '';
 }
 const dotsblink = () => {
     let x = document.querySelector('#dot' + currentLine);
