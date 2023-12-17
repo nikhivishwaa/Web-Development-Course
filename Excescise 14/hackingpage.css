@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', 'Ubuntu', 'sans-serif';
+}
+
+:root {
+    --bgcolor: rgba(38, 38, 38, 0.936);
+    --color: white;
+    --hoverbtncolor: black;
+    --hackingcolor: #00ff18;
+}
+
+body {
+    background-color: var(--bgcolor);
+    color: var(--color);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* add Product Form */
+#start-hacking {
+    display: flex;
+    margin: 10px auto;
+    flex-direction: column;
+    width: 75vw;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Forms input Field */
+.input-fields {
+    padding: 6px 25px;
+    border: 2px solid rgb(129 129 129);
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+/* Forms input Field -> Labels */
+
+.input-labels {
+    margin: 5px 0px;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: var(--bgcolor);
+    color: var(--color);
+    font-size: 1rem;
+    padding: 5px 23px;
+    border: 2px solid var(--bgcolor);
+    border-radius: 28px;
+    margin: 8px;
+}
+
+.btn:hover {
+    background-color: var(--hoverbtncolor);
+    border: 2px solid var(--hoverbtncolor);
+}
+
+
+#hacker-terminal {
+    border: 2px solid rgb(129 129 129);
+    display: flex;
+    margin: 10px auto;
+    flex-direction: column;
+    width: 75vw;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 6px;
+    padding: 6px 25px;
+    display: none;
+}
+
+.lines {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--hackingcolor);
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
